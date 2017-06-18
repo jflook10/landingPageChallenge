@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
+	<script src="https://use.fontawesome.com/a0a8856b15.js"></script>
+
+	<link rel="stylesheet" href="assets/css/style.css">
+
 	<title>Auto Sales</title>
 </head>
 <body>
 <header>
-	<div>
-		<section>
-			<img src="http://via.placeholder.com/50x50" alt="auto sales.com car icon">
+	<div id="header-row">
+		<section class="logo-section">
+			<i class="fa fa-car" aria-hidden="true"></i>
 			<h3>AutoSales.com</h3>
 		</section>
 		<nav>
@@ -19,24 +23,32 @@
 				<li>Sell My Car</li>
 				<li>Find a Dealer</li>
 				<li>Contact us</li>
-				<li><img src="http://via.placeholder.com/50x50" alt=" generic search icon"></li>
+				<li><i class="fa fa-search" aria-hidden="true"></i></li>
 			</ul>
 		</nav>
+	</div>
+	<div id="header-content">
+		<div id="header-content-text">
+			<h1>The Car of Your Dreams is Only a Click Away!</h1>
+			<a href="#" id="header-btn">Get Started Now</a>
+		</div>
 	</div>
 </header>
 <main>
 	<!-- search bar to narrow car criteria -->
-	<div>
-		<select id="search-make">
+	<div id="select-area">
+		<label for="">
+		<select class="car-select" id="select-make">
 			<option value="volvo">Honda</option>
 			<option value="saab">Audi</option>
 		    <option value="mercedes">Chevy</option>
 	   	    <option value="audi">Ford</option>
 		</select>
-		<select id="search-model">
-			<!-- Dropdown List Option -->
+		</label>
+		<select class="car-select" id="select-model">
+			<!-- Add Dropdown List Option -->
 		</select>
-		<select id="search-price">
+		<select class="car-select" id="select-price">
 			<option value="0-10,000">$0-10,000</option>
 			<option value="10,001-25,000">$10,001-25,000</option>
 			<option value="25,001-40,000">$25,001-40,000</option>
@@ -44,64 +56,72 @@
 			<option value="55,001-70,000">$55,001-70,000</option>
 			<option value="70,001+">$70,001+</option>
 		</select>
-		<a href="#">Find My Deam Car</a>
+		<a href="#" id="car-search-btn">Find My Deam Car</a>
 	</div>
 	<!-- Honda car row -->
-	<div>
-		<section>
-			<h2></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, aut tempora fugiat accusamus minima, temporibus esse praesentium sit iste quos neque minus corporis libero sunt dolore facere eum. Tempore, aut.</p>
-			<a href="#">View all</a>
-		</section>
-		<section>
-			<img src="http://via.placeholder.com/100x100" alt="">
-			<img src="http://via.placeholder.com/100x100" alt="">
-		</section>
+	<div class="car-row-a">
+		<div class="car-row-contain">
+			<section>
+				<h2>Honda Cars and SUVs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, aut tempora fugiat accusamus minima, temporibus esse praesentium sit iste quos neque minus corporis libero sunt dolore facere eum. Tempore, aut.</p>
+				<a href="#" class="view-car-btn">View all</a>
+			</section>
+			<section class="car-row-imgs">
+				<img src="assets/images/mainCars/hondaSedan.png" alt="white Honda sedan">
+				<img src="assets/images/mainCars/hondaSUV.png" alt="red Honda CRV">
+			</section>
+		</div>
 	</div>
 	<!-- Audi car row -->
-	<div>
-		<section>
-			<h2></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis aliquid at beatae sapiente ipsa quos expedita quaerat corrupti! Architecto eveniet aperiam ducimus distinctio velit. Tempora quibusdam laboriosam maiores tempore.</p>
-			<a href="#">View all</a>
-		</section>
-		<section>
-			<img src="http://via.placeholder.com/100x100" alt="">
-			<img src="http://via.placeholder.com/100x100" alt="">
-		</section>
+	<div class="car-row-b">
+		<div class="car-row-contain">
+			<section>
+				<h2>Audi Cars and SUVs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit debitis aliquid at beatae sapiente ipsa quos expedita quaerat corrupti! Architecto eveniet aperiam ducimus distinctio velit. Tempora quibusdam laboriosam maiores tempore.</p>
+				<a href="#" class="view-car-btn">View all</a>
+			</section>
+			<section class="car-row-imgs">
+				<img src="assets/images/mainCars/audiSedan.png" alt="audi red hatchback">
+				<img src="assets/images/mainCars/audiSUV.png" alt="audi white SUV">
+			</section>
+		</div>
 	</div>
 	<!-- Chevy car row -->
-	<div>
-		<section>
-			<h2></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas quod voluptates fugit qui reiciendis et aperiam! Aut quis fuga rem a earum dignissimos, quod eum! A sit nam debitis.</p>
-			<a href="#">View all</a>
-		</section>
-		<section>
-			<img src="http://via.placeholder.com/100x100" alt="">
-			<img src="http://via.placeholder.com/100x100" alt="">
-		</section>
+	<div class="car-row-a">
+		<div class="car-row-contain">
+			<section>
+				<h2>Chevy Cars, Trucks, and SUVs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas quod voluptates fugit qui reiciendis et aperiam! Aut quis fuga rem a earum dignissimos, quod eum! A sit nam debitis.</p>
+				<a href="#" class="view-car-btn">View all</a>
+			</section>
+			<section class="car-row-imgs">
+				<img src="assets/images/mainCars/chevySedan.png" alt="white chevy coup">
+				<img src="assets/images/mainCars/chevySUV.png" alt="tan chevy suburban">
+			</section>
+		</div>
 	</div>
 	<!-- Ford car row -->
-	<div>
-		<section>
-			<h2></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sint cumque aliquam magni sapiente assumenda, velit dolorem soluta asperiores ipsa unde perferendis accusamus odio, sunt id. Illo et quod repudiandae!</p>
-			<a href="#">View all</a>
-		</section>
-		<section>
-			<img src="http://via.placeholder.com/100x100" alt="">
-			<img src="http://via.placeholder.com/100x100" alt="">
-		</section>
+	<div class="car-row-b">
+		<div class="car-row-contain">
+			<section>
+				<h2>Ford Cars, Trucks, and SUVs</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sint cumque aliquam magni sapiente assumenda, velit dolorem soluta asperiores ipsa unde perferendis accusamus odio, sunt id. Illo et quod repudiandae!</p>
+				<a href="#" class="view-car-btn">View all</a>
+			</section>
+			<section class="car-row-imgs">
+				<img src="assets/images/mainCars/fordSedan.png" alt="">
+				<img src="assets/images/mainCars/fordTruck.png" alt="black Ford truck">
+			</section>
+		</div>
 	</div>
 </main>
 <footer>
-	<section>
-		<img src="http://via.placeholder.com/50x50" alt="auto sales.com car icon">
+	<section class="logo-section">
+		<i class="fa fa-car" aria-hidden="true"></i>
 		<h3>AutoSales.com</h3>
 	</section>
 	<section>
-		<ul>
+		<ul id="footer-list">
 			<li> <a href="#">Copywright &copy; AutoSales.com</a> </li>
 			<li>|</li>
 			<li> <a href="#">All rights reserved</a>  </li>
