@@ -4,18 +4,25 @@
 
 /* -------------- HEADER -----------------*/
 
-#search-input{
-	background: url("../images/icon-headers/searchWhite.png") no-repeat 95% center;
-	background-size: 12px;
+
+
+#search-input:hover{
+	-webkit-transition: height .2s, background .2s;
+    transition: height 1s, background .5s;
+	background: url("../images/icon-headers/searchYellow.png") no-repeat 95% center;
 	height: 1rem;
-	width: 1rem;
-	border: 0px;
-	outline-color: #3F4952;
+
+}
+
+#search-input{
+	-webkit-transition: width .5s ease-in-out, height .5s, background-color .5s;
+    transition: width .5s ease-in-out, height .5s, background-color .5s;
+
 }
 
 #search-input:focus{
-	-webkit-transition: width 2s, height 1s, background-color .5s;
-    transition: width 2s, height 1s, background-color .5s;
+	-webkit-transition: width .5s ease-in-out, height .5s, background-color .5s;
+    transition: width .5s ease-in-out, height .5s, background-color .5s;
 	background: url("../images/icon-headers/searchGrey.png") no-repeat 95% center;
 	background-size: 1rem;
 	height: 1.333rem;
@@ -25,6 +32,13 @@
 
 #header-btn:hover{
 	background-color: #3AD286;
+}
+
+nav ul li:hover{
+	-webkit-transition: font-size .5s, color .5s;
+    transition: font-size .5s, color .5s;
+	font-size: 0.85rem;
+    color: #f3d563;
 }
 
 
@@ -45,5 +59,15 @@
 }
 
 
+	/* -------- CAR IMAGES ----------*/
+.img-overlay-contain:hover .overlay {
+	opacity: .85;
+}
+
+.overlay{
+	transition: .5s ease;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
 
 

@@ -62,6 +62,16 @@ nav ul li{
 	outline-color: #3F4952;
 }
 
+#search-input{
+	background: url("../images/icon-headers/searchWhite.png") no-repeat 95% center;
+	background-size: 12px;
+	height: 1rem;
+	width: 1rem;
+	border: 0px;
+	outline-color: #3F4952;
+	padding-left: .563rem;
+}
+
 
 #header-content{
 	background-image: url("../images/icon-headers/headerKeys.png");
@@ -190,8 +200,39 @@ nav ul li{
 	justify-content: space-between;
 }
 
-.car-row-imgs img{
+
+.img-overlay-contain{
+	position: relative;
 	width: 48%;
+	height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3F4952;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+}
+
+.overlay hr{
+	width: 90%;
+}
+
+/* -- this one will get messed up! */
+.img-overlay-contain img{
+	width: 100%;
 	height: 100%;
 }
 
@@ -305,9 +346,6 @@ and (max-width: 768px) {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	/*.car-select,#car-search-btn{
-		margin: 1rem;
-	}*/
 
 
 
@@ -341,6 +379,7 @@ and (max-width: 1024px) {
 and (max-width: 768px) {
 
 	footer{
+		padding: 1rem;
 		flex-direction: column;
 		align-items: center;
 	}
@@ -360,3 +399,5 @@ and (max-width: 768px) {
 and (min-width: 768px)
 and (max-width: 1024px) {
 }	
+
+

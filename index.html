@@ -27,9 +27,8 @@
 				<li>Sell My Car</li>
 				<li>Find a Dealer</li>
 				<li>Contact us</li>
-				<!-- <li> <i class="fa fa-search" aria-hidden="true"></i></li> -->
 				<li>
-					<input type="text" id="search-input"> 
+					<input onfocusout="if(this.value !== '') { this.value = ''; }" type="text" id="search-input"> 
 				</li>
 			</ul>
 		</nav>
@@ -52,7 +51,7 @@
 	   	    <option value="audi">Ford</option>
 		</select>
 		<select class="car-select" id="select-model">
-			<option selected disabled>Model</option>
+			 <option selected disabled>Model</option>
 			<option value="Honda Sedan">Honda Sedan</option>
 			<option value="Honda SUV">Honda SUV</option>
 			<option value="Audi Sedan">Audi Sedan</option>
@@ -62,7 +61,7 @@
 			<option value="Chevy Truck">Chevy Truck</option>
 			<option value="Ford Sedan">Ford Sedan</option>
 			<option value="Ford SUV">Ford SUV</option>
-			<option value="Ford Truck">Ford Truck</option>
+			<option value="Ford Truck">Ford Truck</option> 
 		</select>
 		<select class="car-select" id="select-price">
 			<option selected disabled>Price</option>
@@ -84,8 +83,23 @@
 				<a href="#" class="view-car-btn">View all</a>
 			</section>
 			<section class="car-row-imgs">
-				<img src="assets/images/mainCars/hondaSedan.png" alt="white Honda sedan">
-				<img src="assets/images/mainCars/hondaSUV.png" alt="red Honda CRV">
+
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/hondaSedan.png" alt="white Honda sedan">	
+					<div class="overlay">
+						<h3>Honda Sedans</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/hondaSUV.png" alt="red Honda CRV">
+					<div class="overlay">
+						<h3>Honda SUVs</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
 			</section>
 		</div>
 	</div>
@@ -98,8 +112,22 @@
 				<a href="#" class="view-car-btn">View all</a>
 			</section>
 			<section class="car-row-imgs">
-				<img src="assets/images/mainCars/audiSedan.png" alt="audi red hatchback">
-				<img src="assets/images/mainCars/audiSUV.png" alt="audi white SUV">
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/audiSedan.png" alt="audi red hatchback">
+					<div class="overlay">
+						<h3>Audi Sedans</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/audiSUV.png" alt="audi white SUV">
+					<div class="overlay">
+						<h3>Audi SUVs</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
 			</section>
 		</div>
 	</div>
@@ -112,8 +140,22 @@
 				<a href="#" class="view-car-btn">View all</a>
 			</section>
 			<section class="car-row-imgs">
-				<img src="assets/images/mainCars/chevySedan.png" alt="white chevy coup">
-				<img src="assets/images/mainCars/chevySUV.png" alt="tan chevy suburban">
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/chevySedan.png" alt="white chevy coup">
+					<div class="overlay">
+						<h3>Chevy Sedans</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/chevySUV.png" alt="tan chevy suburban">
+					<div class="overlay">
+						<h3>Chevy Trucks &amp; SUVs</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
 			</section>
 		</div>
 	</div>
@@ -126,8 +168,22 @@
 				<a href="#" class="view-car-btn">View all</a>
 			</section>
 			<section class="car-row-imgs">
-				<img src="assets/images/mainCars/fordSedan.png" alt="">
-				<img src="assets/images/mainCars/fordTruck.png" alt="black Ford truck">
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/fordSedan.png" alt="white Ford mustang">
+					<div class="overlay">
+						<h3>Ford Sedans</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
+				<a href="#" class="img-overlay-contain">
+					<img src="assets/images/mainCars/fordTruck.png" alt="black Ford truck">
+					<div class="overlay">
+						<h3>Ford Trucks &amp; SUVs</h3>
+						<hr>
+						<p>Learn More</p>
+					</div>
+				</a>
 			</section>
 		</div>
 	</div>
