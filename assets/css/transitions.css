@@ -70,4 +70,10 @@ nav ul li:hover{
 	-ms-transform: translate(-50%, -50%);
 }
 
+.overlay p:hover{
+	-webkit-transition: color .25s;
+    transition: color .5s;
+    color: #f3d563;
+}
+
 

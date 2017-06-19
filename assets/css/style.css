@@ -34,6 +34,8 @@ p{
 
 /*   --------------  Header  --------------  */
 
+/*   --------------  ------- --------------  */
+
 #header-row{
 	background-color: #3F4952;
 	padding: 0 3%;
@@ -219,7 +221,7 @@ nav ul li{
   justify-content: center;
   background-color: #3F4952;
   color: white;
-  font-size: 20px;
+  font-size: 1.333rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -328,11 +330,6 @@ and (max-width: 1024px) {
 	#header-content-text{
 		margin: 0 2rem;
 	}
-
-	/*#header-content-text h1{
-		max-width: 570px;
-	}
-*/
 }
 
 /*   --------------  MAIN MEDIA QUERY --------------  */
@@ -399,21 +396,4 @@ and (max-width: 768px) {
 and (min-width: 768px)
 and (max-width: 1024px) {
 }	
-
-/* ------ TEST NEW SELECTS ----------*/
-
-#select-area ul
-{
-	display:none;
-	position:absolute;
-	top:100%;
-	left:0;
-	background:#fff;
-	padding:0
-}
-
-#select-area li:hover > ul
-{
-	display:block;
-}
 
