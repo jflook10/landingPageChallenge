@@ -2,9 +2,11 @@
 <html>
 <head>
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<script src="https://use.fontawesome.com/a0a8856b15.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -37,18 +39,28 @@
 <main>
 	<!-- search bar to narrow car criteria -->
 	<div id="select-area">
-		<label for="">
 		<select class="car-select" id="select-make">
+			<option selected disabled>Make</option>
 			<option value="volvo">Honda</option>
 			<option value="saab">Audi</option>
 		    <option value="mercedes">Chevy</option>
 	   	    <option value="audi">Ford</option>
 		</select>
-		</label>
 		<select class="car-select" id="select-model">
-			<!-- Add Dropdown List Option -->
+			<option selected disabled>Model</option>
+			<option value="Honda Sedan">Honda Sedan</option>
+			<option value="Honda SUV">Honda SUV</option>
+			<option value="Audi Sedan">Audi Sedan</option>
+			<option value="Audi SUV">Audi SUV</option>
+			<option value="Chevy Sedan">Chevy Sedan</option>
+			<option value="Chevy SUV">Chevy SUV</option>
+			<option value="Chevy Truck">Chevy Truck</option>
+			<option value="Ford Sedan">Ford Sedan</option>
+			<option value="Ford SUV">Ford SUV</option>
+			<option value="Ford Truck">Ford Truck</option>
 		</select>
 		<select class="car-select" id="select-price">
+			<option selected disabled>Price</option>
 			<option value="0-10,000">$0-10,000</option>
 			<option value="10,001-25,000">$10,001-25,000</option>
 			<option value="25,001-40,000">$25,001-40,000</option>
@@ -122,10 +134,10 @@
 	</section>
 	<section>
 		<ul id="footer-list">
-			<li> <a href="#">Copywright &copy; AutoSales.com</a> </li>
-			<li>|</li>
+			<li> <a href="#">Copywright &copy; 2016 AutoSales.com</a> </li>
+			<li class="footer-bar">|</li>
 			<li> <a href="#">All rights reserved</a>  </li>
-			<li>|</li>
+			<li class="footer-bar">|</li>
 			<li><a href="#">Privacy Policy</a> </li>
 		</ul>
 	</section>

@@ -3,8 +3,11 @@ body{
 	margin: 0px;
 	height: 100%;
 	width: 100%;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
 	color: #3F4952;
+}
+p{
+	font-size: 1rem;
 }
 
 
@@ -17,12 +20,14 @@ body{
 	color: #F1F2F4;
 }
 
-.logo-section .fa-car{
-	color: #F3D563;
+.logo-section h3{
+	font-size: 1.777rem;
+	margin: 0;
+	padding-left: 1em;
 }
 
-.logo-section h3{
-	padding-right: 0 1rem;
+.logo-section .fa-car{
+	color: #F3D563;
 }
 
 
@@ -31,6 +36,7 @@ body{
 #header-row{
 	background-color: #3F4952;
 	padding: 0 3%;
+	height: 45px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -53,7 +59,7 @@ nav ul li{
 
 
 #header-content{
-	background-image: url("../images/headerKeys.png");
+	background-image: url("../images/icon-headers/headerKeys.png");
 	background-size: cover;
 	height: 400px;
 	display: flex;
@@ -63,14 +69,16 @@ nav ul li{
 
 #header-content-text{
 	width: 100%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0px auto;
+    display: flex;
 	flex-direction: column;
 }
 
 #header-content-text h1{
 	font-size: 3.157rem;
 	color: #3F4952;
+	margin: 1rem 0;
     max-width: 600px;
 }
 
@@ -80,7 +88,7 @@ nav ul li{
     font-size: 1.333rem;
     background-color: #34C07B;
     height: 65px;
-    max-width: 300px;
+    max-width: 250px;
     display: flex;
     align-items: center;
     justify-content: center
@@ -88,15 +96,16 @@ nav ul li{
 
 
 
-/*   --------------   Main  --------------  */
+/*   --------------   MAIN  --------------  */
 
 /*   -------------- ------- --------------  */
+
 
 /*   ------  Search Bar  --------------  */
 
 #select-area{
 	height: 90px;
-	max-width: 1200px; 
+	max-width: 1000px; 
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
@@ -104,30 +113,17 @@ nav ul li{
 }
 
 .car-select {
-    /*background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat right center;*/	border: 1px solid #ccc;
+	-webkit-appearance:none; 
+    background: url("../images/icon-headers/selectIcon.png") no-repeat 95% center; 
+    border: 2px solid #6D7780;
 	height: 45px;
 	font-size: 1rem;
+	color: #6D7780;
     padding-left: 1rem;
-	border: 1px solid #ccc;
-	border-radius: 0;
+	border: 1px solid #6D7780;
+	border-radius: 0px;
     margin-right: 1rem;
     flex-grow: 1;
-}
-
-label{
-	position:relative; /*for adding the font-awesome pseudoclass*/
-
-}
-
-label:after {
-    content:"\f078";   
-    font-family: "FontAwesome";
-    font-size: 1rem;
-    color:#aaa;
-    right:8px; top:4px;
-    padding:0 0 2px;
-    position:absolute;
-    pointer-events:none;
 }
 
 #car-search-btn{
@@ -153,7 +149,7 @@ label:after {
 }
 
 .car-row-contain{
-	max-width: 1200px; 
+	max-width: 1000px; 
     margin: 0px auto;
     display: flex;
 	justify-content: space-between;
@@ -192,12 +188,14 @@ label:after {
 
 
 
-/*   --------------   Footer   --------------   */
+/*   --------------   FOOTER   --------------   */
+/*   --------------   -------   --------------   */
 footer{
 	background-color: #3F4952;
-	height: 150px;
-	padding: 0 3%;
+	height: 100%;
+	padding: 1.777rem;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 }
 
@@ -208,16 +206,154 @@ footer section{
 
 #footer-list{
 	list-style: none;
+	font-size: .75rem;
 	display: flex;
 	justify-content: space-between;
 }
 
 #footer-list li{
-	padding: 0px 15px;
-	color: #F1F2F4;
+	padding: 0px .422em;
+	text-align: center;
+	color: #6D7780;
 }
 
 #footer-list li a{
 	text-decoration: none;
-	color: #F1F2F4;
+	color: #6D7780;
 }
+
+
+
+/*   --------------   BEGIN MEDIA QUERY   --------------   */
+
+/*   --------------   ----------------   --------------   */
+
+
+
+
+/*   --------------  HEADER MEDIA QUERY  --------------  */
+@media only screen 
+and (min-width: 320px)
+and (max-width: 768px) {
+	#header-row {
+	    height: 100%;
+	    padding-top: 1rem;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+
+	nav ul{
+		padding-left: 0;
+    	flex-wrap: wrap;
+	}
+
+	#header-content{
+		height: 100%;
+	}
+
+	#header-content-text{
+		margin: 1rem;
+		align-items: center;
+	}
+
+	#header-content-text h1{
+		font-size: 2.369rem;
+		text-align: center;
+	}
+
+	#header-btn{
+		padding: 0 1.777rem;
+	}
+}
+
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+
+	#header-row {
+	    height: 100%;
+	    padding-top: 1rem;
+	    flex-direction: column;
+	    align-items: center;
+	}
+
+	nav ul{
+		padding-left: 0;
+    	flex-wrap: wrap;
+	}
+	
+	#header-content-text{
+		margin: 0 2rem;
+	}
+
+}
+
+/*   --------------  MAIN MEDIA QUERY --------------  */
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 768px) {
+	
+    /* ---- Search Bar  --------  */
+	#select-area{
+		height: 100%;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.car-select,#car-search-btn{
+		margin: 1rem;
+	}
+
+
+
+	/* ---- Car Rows --------  */
+	.car-row-contain, .car-row-b .car-row-contain{
+		margin: 0 1rem;
+		flex-direction: column-reverse;
+	}
+	.car-row-contain section{
+		width: 100%;
+	}
+
+}
+
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+	#select-area{
+		margin: 0 2rem;
+	}
+
+	.car-row-contain, .car-row-b .car-row-contain{
+		margin: 0 2rem;
+	}
+}
+
+/*   --------------  FOOTER MEDIA QUERY   --------------  */
+
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 768px) {
+
+	footer{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#footer-list{
+		padding-left: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.footer-bar{
+		display: none;
+	}
+}
+
+@media only screen 
+and (min-width: 768px)
+and (max-width: 1024px) {
+}	
