@@ -400,4 +400,20 @@ and (min-width: 768px)
 and (max-width: 1024px) {
 }	
 
+/* ------ TEST NEW SELECTS ----------*/
+
+#select-area ul
+{
+	display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#fff;
+	padding:0
+}
+
+#select-area li:hover > ul
+{
+	display:block;
+}
 
