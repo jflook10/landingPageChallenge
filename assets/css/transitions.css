@@ -1,0 +1,49 @@
+
+/* --- Style sheet for css transitions and pseudoclasses ---*/
+
+
+/* -------------- HEADER -----------------*/
+
+#search-input{
+	background: url("../images/icon-headers/searchWhite.png") no-repeat 95% center;
+	background-size: 12px;
+	height: 1rem;
+	width: 1rem;
+	border: 0px;
+	outline-color: #3F4952;
+}
+
+#search-input:focus{
+	-webkit-transition: width 2s, height 1s, background-color .5s;
+    transition: width 2s, height 1s, background-color .5s;
+	background: url("../images/icon-headers/searchGrey.png") no-repeat 95% center;
+	background-size: 1rem;
+	height: 1.333rem;
+	width: 7rem;
+	background-color: #fff;
+}
+
+#header-btn:hover{
+	background-color: #3AD286;
+}
+
+
+/* -------------- MAIN -----------------*/
+
+#car-search-btn:hover{
+	background-color: #FB947A;
+}
+
+
+.view-car-btn:hover{
+	background-color: #63D4F4;
+}
+
+
+.car-select:focus {
+	border-color: #3F4952;
+}
+
+
+
+

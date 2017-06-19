@@ -1,4 +1,5 @@
 /* --------------  Generic  --------------  */
+
 body{
 	margin: 0px;
 	height: 100%;
@@ -36,7 +37,7 @@ p{
 #header-row{
 	background-color: #3F4952;
 	padding: 0 3%;
-	height: 45px;
+	height: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -48,13 +49,17 @@ nav{
 
 nav ul{
 	list-style-type: none;
+	font-size: .75rem;
+    font-weight: bolder;
+    margin: 0;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
 
 nav ul li{
-	padding: 0px 15px;
+	margin: .563rem;
+	outline-color: #3F4952;
 }
 
 
@@ -94,6 +99,9 @@ nav ul li{
     justify-content: center
 }
 
+#mobile-header-text{
+	display: none;
+}
 
 
 /*   --------------   MAIN  --------------  */
@@ -116,13 +124,14 @@ nav ul li{
 	-webkit-appearance:none; 
     background: url("../images/icon-headers/selectIcon.png") no-repeat 95% center; 
     border: 2px solid #6D7780;
+    outline-color: #6D7780;
 	height: 45px;
 	font-size: 1rem;
 	color: #6D7780;
-    padding-left: 1rem;
+    padding: 0 1rem;
 	border: 1px solid #6D7780;
 	border-radius: 0px;
-    margin-right: 1rem;
+    margin: 1rem;
     flex-grow: 1;
 }
 
@@ -131,6 +140,7 @@ nav ul li{
     color: #FFF;
     background-color: #EF7E64;
     padding: 0px 15px;
+    margin: 1rem;
     height: 45px;
     display: flex;
     align-items: center;
@@ -233,10 +243,8 @@ footer section{
 
 /*   --------------  HEADER MEDIA QUERY  --------------  */
 @media only screen 
-and (min-width: 320px)
 and (max-width: 768px) {
 	#header-row {
-	    height: 100%;
 	    padding-top: 1rem;
 	    flex-direction: column;
 	    align-items: center;
@@ -249,34 +257,27 @@ and (max-width: 768px) {
 	}
 
 	#header-content{
-		height: 100%;
+		height: 200px;
 	}
 
 	#header-content-text{
 		margin: 1rem;
-		align-items: center;
+		align-items: flex-start;
 	}
 
 	#header-content-text h1{
-		font-size: 2.369rem;
-		text-align: center;
+		font-size: 1.777rem;
+		max-width: 275px;
 	}
 
 	#header-btn{
-		padding: 0 1.777rem;
+		display: none;
 	}
 }
 
 @media only screen 
 and (min-width: 768px)
 and (max-width: 1024px) {
-
-	#header-row {
-	    height: 100%;
-	    padding-top: 1rem;
-	    flex-direction: column;
-	    align-items: center;
-	}
 
 	nav ul{
 		padding-left: 0;
@@ -287,12 +288,15 @@ and (max-width: 1024px) {
 		margin: 0 2rem;
 	}
 
+	/*#header-content-text h1{
+		max-width: 570px;
+	}
+*/
 }
 
 /*   --------------  MAIN MEDIA QUERY --------------  */
 
 @media only screen 
-and (min-width: 320px)
 and (max-width: 768px) {
 	
     /* ---- Search Bar  --------  */
@@ -301,9 +305,9 @@ and (max-width: 768px) {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-	.car-select,#car-search-btn{
+	/*.car-select,#car-search-btn{
 		margin: 1rem;
-	}
+	}*/
 
 
 
@@ -334,7 +338,6 @@ and (max-width: 1024px) {
 
 
 @media only screen 
-and (min-width: 320px)
 and (max-width: 768px) {
 
 	footer{
