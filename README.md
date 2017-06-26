@@ -8,3 +8,5 @@ Requirements included:
 
 A personal goal was to limit the use of plugins and supportive technologies in order to highlight the fundamental abilities of HTML and CSS. Next stages of development would likely focus on scaling the site.
 
+A personal goal was to limit the use of plugins and supportive technologies in order to highlight the fundamental abilities of HTML and CSS. In its current state, the site is a proof of concept for a future build out. A live version is available at https://autosales.herokuapp.com/. 
+
