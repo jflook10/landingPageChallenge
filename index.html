@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<script src="https://use.fontawesome.com/a0a8856b15.js"></script>
+	<!-- favicon links -->
+	<link rel="icon" type="image/x-icon" href="/assets/images/icon-headers/logo-autosales.ico"/> 
+	<link rel="icon" type="image/png" href="/assets/images/icon-headers/logo-autosales.png"/> 
+	<link rel="icon" type="image/gif" href="/assets/images/icon-headers/logo-autosales.gif"/> 
 
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-	<link rel="icon" type="image/x-icon" href="/assets/images/icon-headers/favicon.ico"/> 
-
-	<link rel="icon" type="image/png" href="/assets/images/icon-headers/favicon.png"/> 
-
-	<link rel="icon" type="image/gif" href="http://www.iconsdb.com/icons/download/orange/car-4-512.gif"/> 
-
-	<link rel="stylesheet" href="assets/css/style.css">
-
-	<link rel="stylesheet" href="assets/css/transitions.css">
-
-
-	
-
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="assets/css/minified.css">
+<!-- 	<link rel="stylesheet" href="assets/css/transitions.css">
+ -->
 
 	<title>Auto Sales</title>
 </head>
@@ -28,15 +20,15 @@
 <header>
 	<div id="header-row">
 		<section class="logo-section">
-			<i class="fa fa-car" aria-hidden="true"></i>
-			<h3>AutoSales.com</h3>
+			<img src="./assets/images/icon-headers/logo-autosales.svg" alt="AutoSales.com logo">
+			<h3>AutoSales.com</h3> 
 		</section>
 		<nav>
 			<ul>
-				<li>Cars for Sale</li>
-				<li>Sell My Car</li>
-				<li>Find a Dealer</li>
-				<li>Contact us</li>
+				<li><a href="#">Cars for Sale</a></li>
+				<li><a href="#">Sell My Car</a></li>
+				<li><a href="#">Find a Dealer</a></li>
+				<li><a href="#">Contact Us</a></li>
 				<li>
 					<input onfocusout="if(this.value !== '') { this.value = ''; }" type="text" id="search-input"> 
 				</li>
@@ -100,7 +92,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/hondaSedan.png" alt="white Honda sedan">	
 					<div class="overlay">
-						<h3>Honda Sedans</h3>
+						<h4>Honda Sedans</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -108,7 +100,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/hondaSUV.png" alt="red Honda CRV">
 					<div class="overlay">
-						<h3>Honda SUVs</h3>
+						<h4>Honda SUVs</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -128,7 +120,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/audiSedan.png" alt="audi red hatchback">
 					<div class="overlay">
-						<h3>Audi Sedans</h3>
+						<h4>Audi Sedans</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -136,7 +128,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/audiSUV.png" alt="audi white SUV">
 					<div class="overlay">
-						<h3>Audi SUVs</h3>
+						<h4>Audi SUVs</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -156,7 +148,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/chevySedan.png" alt="white chevy coup">
 					<div class="overlay">
-						<h3>Chevy Sedans</h3>
+						<h4>Chevy Sedans</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -164,7 +156,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/chevySUV.png" alt="tan chevy suburban">
 					<div class="overlay">
-						<h3>Chevy Trucks &amp; SUVs</h3>
+						<h4>Chevy Trucks &amp; SUVs</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -184,7 +176,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/fordSedan.png" alt="white Ford mustang">
 					<div class="overlay">
-						<h3>Ford Sedans</h3>
+						<h4>Ford Sedans</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -192,7 +184,7 @@
 				<a href="#" class="img-overlay-contain">
 					<img src="assets/images/mainCars/fordTruck.png" alt="black Ford truck">
 					<div class="overlay">
-						<h3>Ford Trucks &amp; SUVs</h3>
+						<h4>Ford Trucks &amp; SUVs</h4>
 						<hr>
 						<p>Learn More</p>
 					</div>
@@ -208,10 +200,8 @@
 	</section>
 	<section>
 		<ul id="footer-list">
-			<li> <a href="#">Copywright &copy; 2016 AutoSales.com</a> </li>
-			<li class="footer-bar">|</li>
-			<li> <a href="#">All rights reserved</a>  </li>
-			<li class="footer-bar">|</li>
+			<li> Copywright &copy; 2016 AutoSales.com</li>
+			<li> All rights reserved </li>
 			<li><a href="#">Privacy Policy</a> </li>
 		</ul>
 	</section>

@@ -9,8 +9,8 @@
 #search-input:hover{
 	-webkit-transition: height .2s, background .2s;
     transition: height 1s, background .5s;
-	background: url("../images/icon-headers/searchYellow.png") no-repeat 95% center;
-	height: 1rem;
+/*	background: url("../images/icon-headers/searchYellow.png") no-repeat 95% center;
+*/	height: 1.1rem;
 
 }
 
@@ -34,7 +34,7 @@
 	background-color: #3AD286;
 }
 
-nav ul li:hover{
+nav ul li a:hover{
 	-webkit-transition: font-size .5s, color .5s;
     transition: font-size .5s, color .5s;
 	font-size: 0.85rem;
@@ -54,7 +54,7 @@ nav ul li:hover{
 }
 
 
-.car-select:focus {
+.car-select:focus, .car-select:hover {
 	border-color: #3F4952;
 }
 

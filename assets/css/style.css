@@ -1,10 +1,10 @@
 /* --------------  Generic  --------------  */
 
 body{
-	margin: 0px;
+	margin: 0;
 	height: 100%;
 	width: 100%;
-	font-family: 'Lato', sans-serif;
+	font-family: sans-serif;
 	color: #3F4952;
 }
 p{
@@ -14,7 +14,6 @@ p{
 
 /* logo image and text used in the header and footer*/
 .logo-section{
-	font-size: 1.777rem;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -22,13 +21,13 @@ p{
 }
 
 .logo-section h3{
-	font-size: 1.777rem;
+	font-size: 1.333rem;
 	margin: 0;
-	padding-left: 1em;
+	padding-left: .422rem;
 }
 
-.logo-section .fa-car{
-	color: #F3D563;
+.logo-section img{
+	height: 1.777rem;
 }
 
 
@@ -39,6 +38,7 @@ p{
 #header-row{
 	background-color: #3F4952;
 	padding: 0 3%;
+	min-height: 50px;
 	height: 100%;
 	display: flex;
 	justify-content: space-between;
@@ -59,17 +59,22 @@ nav ul{
 	align-items: center;
 }
 
-nav ul li{
+nav li{
 	margin: .563rem;
 	outline-color: #3F4952;
 }
 
+nav ul li a{
+	color: #F1F2F4;
+	text-decoration: none;
+}
+
 #search-input{
-	background: url("../images/icon-headers/searchWhite.png") no-repeat 95% center;
-	background-size: 12px;
+	background: url("../images/icon-headers/icon-search-white.svg") no-repeat 100% center;
+	/*//background-size: 1rem;*/
 	height: 1rem;
 	width: 1rem;
-	border: 0px;
+	border: 0;
 	outline-color: #3F4952;
 	padding-left: .563rem;
 }
@@ -87,15 +92,16 @@ nav ul li{
 #header-content-text{
 	width: 100%;
     max-width: 1000px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
 	flex-direction: column;
 }
 
 #header-content-text h1{
 	font-size: 3.157rem;
+	font-weight: bold;
 	color: #3F4952;
-	margin: 1rem 0;
+	margin: 1rem 0 2.369rem 0;
     max-width: 600px;
 }
 
@@ -126,23 +132,23 @@ nav ul li{
 #select-area{
 	height: 90px;
 	max-width: 1000px; 
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .car-select {
-	-webkit-appearance:none; 
-    background: url("../images/icon-headers/selectIcon.png") no-repeat 95% center; 
-    border: 2px solid #6D7780;
-    outline-color: #6D7780;
-	height: 45px;
-	font-size: 1rem;
-	color: #6D7780;
+    -webkit-appearance: none;
+    background: url(../images/icon-headers/selectIcon.png) no-repeat 95% center;
+    background-size: .75rem;
+    outline-color: rgba(169, 174, 179, 0.74);
+    height: 45px;
+    font-size: 1rem;
+    color: #a9aeb3;
     padding: 0 1rem;
-	border: 1px solid #6D7780;
-	border-radius: 0px;
+    border: 2px solid rgba(169, 174, 179, 0.74);
+    border-radius: 0;
     margin: 1rem;
     flex-grow: 1;
 }
@@ -151,13 +157,18 @@ nav ul li{
 	text-decoration: none;
     color: #FFF;
     background-color: #EF7E64;
-    padding: 0px 15px;
+    padding: 0 15px;
     margin: 1rem;
+    margin-right: 0;
     height: 45px;
+    min-width: 20%;
     display: flex;
     align-items: center;
 }
 
+#select-make{
+	margin-left: 0;
+}
 
 /*   ------  Car Rows  --------------  */
 
@@ -172,7 +183,7 @@ nav ul li{
 
 .car-row-contain{
 	max-width: 1000px; 
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -232,6 +243,10 @@ nav ul li{
 	width: 90%;
 }
 
+.overlay h4, .overlay p{
+	margin: 0 .563rem;
+}
+
 /* -- this one will get messed up! */
 .img-overlay-contain img{
 	width: 100%;
@@ -245,6 +260,7 @@ nav ul li{
 /*   --------------   -------   --------------   */
 footer{
 	background-color: #3F4952;
+	min-height: 150px;
 	height: 100%;
 	padding: 1.777rem;
 	display: flex;
@@ -265,7 +281,7 @@ footer section{
 }
 
 #footer-list li{
-	padding: 0px .422em;
+	padding: 0 .563rem;
 	text-align: center;
 	color: #6D7780;
 }
@@ -275,6 +291,10 @@ footer section{
 	color: #6D7780;
 }
 
+#footer-list li:nth-child(2){
+	border-left: 1px solid #6D7780;
+	border-right: 1px solid #6D7780
+}
 
 
 /*   --------------   BEGIN MEDIA QUERY   --------------   */
@@ -343,7 +363,10 @@ and (max-width: 768px) {
 		flex-wrap: wrap;
 		justify-content: center;
 	}
-
+	
+	#select-make, #car-search-btn{
+		margin: 1rem;
+	}
 
 
 	/* ---- Car Rows --------  */
@@ -379,6 +402,7 @@ and (max-width: 768px) {
 		padding: 1rem;
 		flex-direction: column;
 		align-items: center;
+		justify-content: space-around;
 	}
 
 	#footer-list{
