@@ -20,13 +20,13 @@ p{
 	color: #F1F2F4;
 }
 
-.logo-section h3{
+.logo-section h3, footer h3{
 	font-size: 1.333rem;
 	margin: 0;
 	padding-left: .422rem;
 }
 
-.logo-section img{
+.logo-section img, footer img{
 	height: 1.777rem;
 }
 
@@ -269,6 +269,7 @@ footer{
 }
 
 footer section{
+	color: #6D7780;
 	display: flex;
     align-items: center;
 }
