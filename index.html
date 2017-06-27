@@ -5,31 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- favicon links -->
-	<link rel="icon" type="image/x-icon" href="/assets/images/icon-headers/logo-autosales.ico"/> 
-	<link rel="icon" type="image/png" href="/assets/images/icon-headers/logo-autosales.png"/> 
-	<link rel="icon" type="image/gif" href="/assets/images/icon-headers/logo-autosales.gif"/> 
+	<link rel="icon" type="image/x-icon" href="./assets/images/icon-headers/logo-autosales.ico"/> 
 
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="assets/css/minified.css">
 
 
+
 	<title>Auto Sales</title>
 </head>
 <body>
-<header>
+<header role="banner">
 	<div id="header-row">
 		<section class="logo-section">
 			<img src="./assets/images/icon-headers/logo-autosales.svg" alt="AutoSales.com logo">
 			<h3>AutoSales.com</h3> 
 		</section>
-		<nav>
+		<nav role="navigation">
 			<ul>
 				<li><a href="#">Cars for Sale</a></li>
 				<li><a href="#">Sell My Car</a></li>
 				<li><a href="#">Find a Dealer</a></li>
 				<li><a href="#">Contact Us</a></li>
 				<li>
-					<input onfocusout="if(this.value !== '') { this.value = ''; }" type="text" id="search-input"> 
+					<input id="search-input"> 
 				</li>
 			</ul>
 		</nav>
@@ -37,7 +36,7 @@
 	<div id="header-content">
 		<div id="header-content-text">
 			<h1>The Car of Your Dreams is Only a Click Away!</h1>
-			<a href="#" id="header-btn">Get Started Now</a>
+			<a href="#" id="header-btn" role="button">Get Started Now</a>
 		</div>
 	</div>
 </header>
@@ -204,6 +203,7 @@
 			<li><a href="#">Privacy Policy</a> </li>
 		</ul>
 	</section>
-</footer>
+</footer role="contentinfo">
+<script type="text/javascript" src="./js/logic.js"></script>
 </body>
 </html>
